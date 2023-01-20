@@ -1,0 +1,59 @@
+{
+    "name": "michael-rubel/laravel-loop-functions",
+    "description": "Collection of functions to loop over your data.",
+    "keywords": [
+        "michael-rubel",
+        "laravel",
+        "laravel-loop-functions"
+    ],
+    "homepage": "https://github.com/michael-rubel/laravel-loop-functions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Rubel",
+            "email": "contact@observer.name",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1",
+        "illuminate/contracts": "^8.71|^9.0",
+        "spatie/laravel-package-tools": "^1.9"
+    },
+    "require-dev": {
+        "brianium/paratest": "^6.3",
+        "laravel/pint": "^0.2.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10|^6.0",
+        "nunomaduro/larastan": "^1.0",
+        "orchestra/testbench": "^6.6|^7.0",
+        "phpunit/phpunit": "^9.5",
+        "roave/backward-compatibility-check": "^6.4|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichaelRubel\\LoopFunctions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MichaelRubel\\LoopFunctions\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/testbench package:test --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichaelRubel\\LoopFunctions\\LoopFunctionServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

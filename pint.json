@@ -1,0 +1,9 @@
+{
+  "preset": "laravel",
+  "rules": {
+    "phpdoc_separation": false,
+    "concat_space": {
+      "spacing": "one"
+    }
+  }
+}
